@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Gemria</string>
+    <string name="label_description">Description</string>
+    <string name="label_developer">Developer</string>
+    <string name="total_reviews">%1$s Reviews</string>
+    <string name="desc_back_to_previous_screen">Back to previous screen</string>
+    <string name="desc_game_background_image">Game background image</string>
+    <string name="desc_game_poster_image">Game poster image</string>
+    <string name="desc_share_game">Share game</string>
+    <string name="label_full_name">Full Name:</string>
+    <string name="label_ibnu_batutah">Ibnu Batutah</string>
+    <string name="label_email">Email:</string>
+    <string name="label_email_dicoding">ibnubatutah001@gmail.com</string>
+    <string name="desc_my_profile_pic">My profile pic</string>
+    <string name="appbar_about_me">About Me</string>
+
+</resources>

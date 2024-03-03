@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+    tools:context=".presentation.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/desc_game_background_image"
+            tools:src="@drawable/dota_background" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/gradient_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent=".45"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/desc_game_background_image" />
+
+        <ImageButton
+            android:id="@+id/action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/desc_back_to_previous_screen" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_game"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            app:cardCornerRadius="@dimen/dimen_8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_background">
+
+            <ImageView
+                android:id="@+id/img_game"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/dota_poster"
+                android:contentDescription="@string/desc_game_poster_image"
+                tools:background="#DFDFDF" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:textColor="@color/light_grey"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_game"
+            tools:text="Dota 2" />
+
+        <TextView
+            android:id="@+id/tv_game_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/light_green"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_game_categories"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_game_categories"
+            tools:text="Rp 500.000" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:backgroundTint="@color/white"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            android:focusable="true"
+            app:fabCustomSize="44dp"
+            android:layout_marginEnd="@dimen/dimen_16dp"
+            android:src="@drawable/ic_share"
+            app:fabSize="normal"
+            app:layout_anchorGravity="end|bottom"
+            app:layout_constraintBottom_toBottomOf="@+id/img_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_background"
+            android:contentDescription="@string/desc_share_game" />
+
+        <TextView
+            android:id="@+id/tv_game_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/light_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_game_name"
+            tools:text="Kategori" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/dimen_12dp"
+            android:layout_marginStart="@dimen/dimen_4dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_game_rating"
+            app:layout_constraintStart_toEndOf="@+id/tv_game_rating"
+            app:layout_constraintTop_toTopOf="@+id/tv_game_rating" />
+
+        <TextView
+            android:id="@+id/tv_game_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:textColor="@color/light_green"
+            app:layout_constraintStart_toStartOf="@+id/tv_game_categories"
+            app:layout_constraintTop_toBottomOf="@+id/tv_game_categories"
+            tools:text="Very Good" />
+
+        <TextView
+            android:id="@+id/tv_game_total_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:maxLines="2"
+            android:layout_marginStart="@dimen/dimen_4dp"
+            android:textColor="@color/item_back_ground_lightest"
+            app:layout_constraintStart_toEndOf="@+id/divider1"
+            app:layout_constraintTop_toBottomOf="@+id/tv_game_categories"
+            tools:text="1000 reviews" />
+
+
+        <TextView
+            android:id="@+id/tx_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/label_description"
+            android:textStyle="bold"
+            android:textColor="@color/light_grey"
+            app:layout_constraintStart_toStartOf="@+id/tv_game_rating"
+            app:layout_constraintTop_toBottomOf="@+id/tv_game_rating" />
+
+        <TextView
+            android:id="@+id/tv_game_desc"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/label_description"
+            android:textColor="@color/text_color"
+            app:layout_constraintStart_toStartOf="@+id/tx_desc"
+            app:layout_constraintTop_toBottomOf="@+id/tx_desc" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="@string/label_developer"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:textColor="@color/light_grey"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_game_desc" />
+
+        <TextView
+            android:id="@+id/tv_game_dev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/light_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            tools:text="@string/label_developer" />
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/text_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingBottom="@dimen/dimen_24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_game_dev"
+            tools:text="@string/label_developer" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -1,1 +1,0 @@
-# MD-Learning Material
