@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="logo_image" format="reference"/>
+    <attr name="text_color" format="reference"/>
+    <attr name="button_color" format="reference"/>
+    <attr name="item_color" format="reference"/>
+    <attr name="toolbar_color" format="reference"/>
+    <attr name="card_color" format="reference"/>
+    <style name="GitFriendTextStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Regular">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    
+    <style name="GitFriendTextStyle.Bold">
+    </style>
+
+    <style name="GitFriendTextStyle.Regular.Heading5">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Regular.Heading4">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Regular.Heading3">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Regular.Heading5.Green">
+    </style>
+
+    <style name="GitFriendTextStyle.Regular.Heading3.White">
+        <item name="android:textColor">?attr/text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Regular.Heading4.DarkGrey">
+    </style>
+
+    <style name="GitFriendTextStyle.Bold.Heading1">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Bold.Heading2">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Bold.Heading3">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="GitFriendTextStyle.Bold.Heading2.DarkGrey">
+    </style>
+
+</resources>

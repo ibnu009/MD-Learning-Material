@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GitFriend</string>
+    <string name="label_find_friend">Cari Teman</string>
+    <string name="label_fav_friend">Favorit</string>
+
+    <string name="title_search_page">Cari Teman</string>
+    <string name="title_favorite_page">Teman Favorit</string>
+    <string name="title_setting_page">Pengaturan</string>
+
+    <string name="message_gitfriend_not_found">Teman Git mu tidak ditemukan..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_title_follower">Followers</string>
+    <string name="tab_title_following">Following</string>
+    <string name="label_turn_on_dark_mode">Hidupkan dark mode</string>
+    <string name="action_retry">Muat Ulang</string>
+    <string name="label_follower">%1$s Followers</string>
+    <string name="label_following">%1$s Following</string>
+</resources>

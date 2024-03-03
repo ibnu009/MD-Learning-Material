@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ibnu.gitfriend.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailUserFragment"
+            app:destination="@id/detailUserFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ibnu.gitfriend.presentation.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailUserFragment"
+            app:destination="@id/detailUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.ibnu.gitfriend.presentation.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_detailUserFragment"
+            app:destination="@id/detailUserFragment" />
+        <argument
+            android:name="noga"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ibnu.gitfriend.presentation.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailUserFragment"
+        android:name="com.ibnu.gitfriend.presentation.detail.DetailUserFragment"
+        android:label="DetailUserFragment" >
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue=""/>
+        <action
+            android:id="@+id/action_detail_fragment_to_detail_fragment"
+            app:destination="@id/detailUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/followerFragment"
+        android:name="com.ibnu.gitfriend.presentation.follower.FollowerFragment"
+        android:label="fragment_follower"
+        tools:layout="@layout/fragment_follower" >
+    </fragment>
+    <fragment
+        android:id="@+id/followingFragment"
+        android:name="com.ibnu.gitfriend.presentation.following.FollowingFragment"
+        android:label="fragment_following"
+        tools:layout="@layout/fragment_following" >
+    </fragment>
+
+
+
+
+
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.ibnu.gitfriend.presentation.setting.SettingFragment"
+        android:label="SettingFragment" />
+    <fragment
+        android:id="@+id/nogaFragment"
+        android:name="com.ibnu.gitfriend.presentation.noga.NogaFragment"
+        android:label="fragment_noga"
+        tools:layout="@layout/fragment_noga" />
+
+</navigation>

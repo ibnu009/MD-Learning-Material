@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GitFriend" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/back_ground</item>
+        <item name="logo_image">@drawable/logo_white</item>
+        <item name="text_color">@color/white</item>
+        <item name="button_color">@color/purple_700</item>
+        <item name="item_color">@color/item_back_ground</item>
+        <item name="toolbar_color">@color/action_bar_darker</item>
+        <item name="card_color">@color/white</item>
+
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/back_ground</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
