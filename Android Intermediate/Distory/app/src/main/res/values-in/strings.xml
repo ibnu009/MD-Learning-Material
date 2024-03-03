@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Distory</string>
+    <string name="action_login">Masuk</string>
+    <string name="action_register">Daftar</string>
+    <string name="action_add_story">Unggah Cerita</string>
+    <string name="action_refresh">Muat Ulang</string>
+    <string name="action_allow">Izinkan</string>
+
+    <string name="hint_full_name">Masukkan nama lengkap mu</string>
+    <string name="hint_email">Masukkan email mu</string>
+    <string name="hint_password">Masukkan kata sandi mu</string>
+    <string name="hint_add_story_description">Tambahkan deskripsi cerita mu</string>
+
+    <string name="label_login">Masuk</string>
+    <string name="label_login_subtitle">Yuk masuk menggunakan akunmu untuk lanjut</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Kata Sandi</string>
+    <string name="label_register_here">Atau daftar disini</string>
+    <string name="label_register">Daftar</string>
+    <string name="label_register_subtitle">Buat akun Distory untuk mulai menambahkan ceritamu sendiri</string>
+    <string name="label_full_name">Nama Lengkap</string>
+    <string name="label_loading">Memuat..</string>
+    <string name="label_story_not_found">Cerita tidak ditemukan</string>
+    <string name="label_hour">%1$d jam yang lalu</string>
+    <string name="label_seconds">%1$d detik yang lalu</string>
+    <string name="label_day">%1$d hari yang lalu</string>
+    <string name="label_minutes">%1$d menit yang lalu</string>
+    <string name="label_photo_story">Unggah foto cerita</string>
+    <string name="label_add_story_description">Tambahkan deskripsi cerita</string>
+
+    <string name="title_add_story">Tambah Cerita</string>
+    <string name="title_success">Sukses</string>
+    <string name="title_logout">Keluar</string>
+    <string name="title_story_detail">Detail Cerita</string>
+    <string name="title_close_app">Keluar dari Distory?</string>
+    <string name="title_ask_permission_location">Hidupkan lokasi</string>
+
+    <string name="message_success_upload_story">Cerita mu berhasil diunggah!</string>
+    <string name="message_location_access">Kami meminta akses lokasi anda untuk memberikan kemudahan untuk meningkatkan pengalaman pengguna dalam menggunakan aplikasi Distory</string>
+
+    <string name="validation_full_name">Nama lengkap hanya boleh karakter</string>
+    <string name="validation_email">Format emailmu kurang tepat</string>
+    <string name="validation_password">Minimal 8 karakter</string>
+    <string name="validation_must_not_empty">Field tidak boleh kosong</string>
+    <string name="validation_email_not_valid">Email tidak valid</string>
+    <string name="validation_email_must_not_empty">Email tidak boleh kosong</string>
+    <string name="validation_description_must_not_empty">Deskripsi tidak boleh kosong</string>
+    <string name="validation_photo">Kamu harus menambahkan foto untuk cerita mu</string>
+
+    <string name="warning_image_picker_permission">Aplikasi membutuhkan izin untuk mengakses kamera dan galeri</string>
+
+    <string name="settings">Pengaturan</string>
+    <string name="home">Beranda</string>
+
+    <string name="label_choose_image_picker_method">Pilih metode pengambilan gambar</string>
+
+    <string-array name="pictures">
+        <item>Dari kamera</item>
+        <item>Dari galeri</item>
+    </string-array>
+    <string name="action_logout">Keluar</string>
+    <string name="label_description">Deskripsi</string>
+    <string name="action_language_setting">Pengaturan Bahasa</string>
+    <string name="label_yes">Ya</string>
+    <string name="label_no">Tidak</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="message_logout">Apakah kamu yakin ingin keluar?</string>
+    <string name="message_close_app">Apakah kamu yakin untuk keluar dari Distory?</string>
+    <string name="appwidget_text">Cerita Terbaru</string>
+    <string name="add_widget">Tambah Widget</string>
+    <string name="app_widget_description">Lihat cerita terbaru dari Distory</string>
+    <string name="title_location_required">Izinkan lokasi</string>
+    <string name="message_location_required">Aplikasi membutuhkan izin lokasi untuk mengakses fitur ini</string>
+    <string name="title_stories_location">Lokasi Cerita</string>
+    <string name="ambil_lokasi">Ambil Lokasi</string>
+    <string name="label_add_current_location">Tambahkan lokasi saat ini?</string>
+</resources>

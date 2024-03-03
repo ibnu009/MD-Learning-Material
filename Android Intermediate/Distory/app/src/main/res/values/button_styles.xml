@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DistoryButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@null</item>
+        <item name="rippleColor">#40FFFFFF</item>
+        <item name="cornerRadius">@dimen/dimen_8dp</item>
+        <item name="android:textAppearance">@style/DistoryTextStyle.Regular.Heading4</item>
+    </style>
+
+    <style name="DistorySecondaryButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@null</item>
+        <item name="rippleColor">#40FFFFFF</item>
+        <item name="cornerRadius">@dimen/dimen_8dp</item>
+        <item name="android:backgroundTint">@color/teal_200</item>
+        <item name="android:textAppearance">@style/DistoryTextStyle.Regular.Heading4</item>
+    </style>
+
+    <style name="DistoryButton.WhiteText">
+        <item name="android:textAppearance">@style/DistoryTextStyle.Regular.Heading3.White</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="DistorySecondaryButton.WhiteText">
+        <item name="android:textAppearance">@style/DistoryTextStyle.Regular.Heading3.White</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="DistoryButton.BlackText">
+        <item name="android:textAppearance">@style/DistoryTextStyle.Regular.Heading3</item>
+    </style>
+
+    <style name="DistoryButtonOutline" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@null</item>
+        <item name="cornerRadius">@dimen/dimen_16dp</item>
+        <item name="rippleColor">#40FFFFFF</item>
+    </style>
+
+    <style name="DistoryTextButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@null</item>
+        <item name="rippleColor">#40FFFFFF</item>
+    </style>
+
+    <style name="DistoryTextButton.WhiteText">
+        <item name="android:textAppearance">@style/DistoryTextStyle.Regular.Heading3</item>
+    </style>
+
+</resources>

@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Distory</string>
+    <string name="action_login">Login</string>
+    <string name="action_register">Register</string>
+    <string name="action_add_story">Upload Story</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_language_setting">Language</string>
+
+    <string name="hint_full_name">Enter your full name</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_add_story_description">Add your story description</string>
+
+    <string name="label_login">Login</string>
+    <string name="label_login_subtitle">Please login using your account to continue</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="label_register_here">Or register here</string>
+    <string name="label_register">Register</string>
+    <string name="label_register_subtitle">Create your Distory account to post your very own stories</string>
+    <string name="label_full_name">Full Name</string>
+    <string name="label_loading">Loading..</string>
+    <string name="label_day">%1$d days ago</string>
+    <string name="label_hour">%1$d hours ago</string>
+    <string name="label_minutes">%1$d minutes ago</string>
+    <string name="label_seconds">%1$d seconds ago</string>
+    <string name="label_story_not_found">Stories not found</string>
+    <string name="label_photo_story">Upload photo story</string>
+    <string name="label_add_story_description">Add story description</string>
+    <string name="label_choose_image_picker_method">Choose image picker method</string>
+    <string name="label_description">Description</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+
+
+    <string name="title_add_story">Add Story</string>
+    <string name="title_stories_location">Stories Location</string>
+    <string name="title_success">Success</string>
+    <string name="title_story_detail">Story Detail</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_close_app">Close Distory?</string>
+    <string name="title_ask_permission_location">Enable location</string>
+
+    <string name="message_success_upload_story">Your story is uploaded!</string>
+    <string name="message_logout">Are you sure you want to logout?</string>
+    <string name="message_close_app">Are you sure you want to close Distory?</string>
+    <string name="message_location_access">We request access to your location to provide convenience in enhancing the user experience of using the Distory application.</string>
+
+
+    <string name="validation_full_name">Full name only allow characters</string>
+    <string name="validation_email">Your email format is incorrect</string>
+    <string name="validation_password">Min 8 characters</string>
+    <string name="validation_must_not_empty">This field must not be empty</string>
+    <string name="validation_description_must_not_empty">Story description must not be empty</string>
+    <string name="validation_photo">You have to add photo for your story</string>
+    <string name="validation_email_not_valid">Email is invalid</string>
+    <string name="validation_email_must_not_empty">Email should not be empty</string>
+
+    <string name="warning_image_picker_permission">Application need permission to access camera and gallery</string>
+
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_allow">Allow</string>
+
+    <string-array name="pictures">
+        <item>From Camera</item>
+        <item>From Gallery</item>
+    </string-array>
+
+    <string name="appwidget_text">Recent Stories</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">See Distory recent stories</string>
+    <string name="title_location_required">Location Permission Needed</string>
+    <string name="message_location_required">This app needs the Location permission, please accept to use location functionality</string>
+    <string name="latitude" translatable="false">Latitude</string>
+    <string name="label_empty_input" translatable="false">-</string>
+    <string name="label_longitude" translatable="false">Longitude</string>
+    <string name="ambil_lokasi">Take Location</string>
+    <string name="label_add_current_location">Add current location?</string>
+
+</resources>
