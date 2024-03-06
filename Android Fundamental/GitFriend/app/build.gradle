@@ -18,7 +18,7 @@ android {
 
         buildConfigField("String", "BASE_URL", '"https://api.github.com/"')
         buildConfigField("String", "DB_NAME", '"git-friend-db"')
-        buildConfigField("String", "TOKEN", '"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"')
+        buildConfigField("String", "TOKEN", '"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"')
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
