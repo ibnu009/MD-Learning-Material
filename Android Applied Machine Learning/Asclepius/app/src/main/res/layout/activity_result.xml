@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appBarCoor"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:fitsSystemWindows="true">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/collapsingToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_color"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="@color/primary_color"
+                    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+                    <ImageView
+                        android:id="@+id/result_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/result_text"
+                        app:srcCompat="@drawable/ic_place_holder" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:navigationIcon="@drawable/ic_arrow_back" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-25dp"
+                android:background="@drawable/bg_content"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/llContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/result_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_24dp"
+                        android:layout_marginTop="@dimen/dimen_24dp"
+                        android:text="@string/result"
+                        style="@style/AppTextStyle.Bold.Heading1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/llContent" />
+
+                    <TextView
+                        android:id="@+id/tv_confidence_score"
+                        style="@style/AppTextStyle.Bold.Heading1"
+                        android:layout_width="0dp"
+                        android:textAlignment="textEnd"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_24dp"
+                        android:layout_marginEnd="@dimen/dimen_24dp"
+                        tools:text="98%"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/result_text"
+                        app:layout_constraintTop_toTopOf="@id/llContent" />
+
+                    <TextView
+                        android:id="@+id/tx_result_description"
+                        style="@style/AppTextStyle.Bold"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/primary_color_darker"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_24dp"
+                        android:text="@string/label_result_description"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/result_text" />
+
+                    <TextView
+                        android:id="@+id/tv_result_description"
+                        style="@style/AppTextStyle.Regular"
+                        android:layout_marginTop="@dimen/dimen_4dp"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/primary_color_darker"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/dimen_24dp"
+                        android:text="@string/label_result_description"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tx_result_description" />
+
+                    <TextView
+                        android:id="@+id/tx_article"
+                        style="@style/AppTextStyle.Bold"
+                        android:layout_marginTop="@dimen/dimen_16dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/primary_color_darker"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_24dp"
+                        android:text="@string/label_related_article"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_result_description" />
+
+                    <LinearLayout
+                        app:layout_constraintTop_toBottomOf="@+id/tx_article"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/dimen_24dp"
+                            android:indeterminate="true"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_article"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/item_article"
+                            android:layout_marginTop="@dimen/dimen_16dp"
+                            android:layout_marginBottom="@dimen/dimen_16dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tx_article" />
+
+                        <Button
+                            android:id="@+id/saveButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/action_save_result"
+                            app:layout_constraintTop_toBottomOf="@id/rv_article"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </LinearLayout>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

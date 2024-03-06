@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Asclepius</string>
+    <string name="camera_x">CameraX</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="analyze">Analyze</string>
+    <string name="result">Hasil Analisis</string>
+    <string name="info_result_saved">Hasil analisa berhasil disimpan</string>
+    <string name="label_result_description">Apa Artinya?</string>
+    <string name="label_related_article">Artikel Terkait</string>
+    <string name="non_cancer_description">Berita Bagus! Anda tidak terdeteksi memili kanker kulit. Terus jaga kesehatan kesehatan dan pakai sunscreen ketika berpergian.</string>
+    <string name="cancer_description">Anda terdeteksi memiliki kanker kulit, segera temui dokter kulit terdekat di kota Anda. Selagi menunggu waktu pemeriksaan diharapkan Anda mengenakan sunscreen selama bepergian agar tidak memperburuk keadaan kulit</string>
+    <string name="action_save_result">Simpan Hasil</string>
+    <string name="label_empty_data">Belum ada data history</string>
+</resources>
